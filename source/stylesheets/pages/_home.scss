@@ -29,6 +29,20 @@ html body {
   border-top-left-radius: 200px;
 }
 
+.site-icons-inline {
+  font-size: 40px;
+  a {
+    text-decoration: none;
+    color:#acced4;
+  }
+  .link-big {
+    &:hover {
+      opacity: 0.5;
+      color: #acced4;
+    }
+  }
+}
+
 .title-stripe {
   width: 100%;
   background-color: #ededed;
@@ -48,8 +62,7 @@ html body {
 .btn-line {
   border: 1px solid #acced4;
   color: #acced4;
-
-
+  font-size: 18px;
   &:hover {
     opacity: 0.5;
     color: #acced4;
@@ -150,3 +163,6 @@ html body {
     width: 350px;
   }
 }
+
+//#b2acd4 purple
+//#acced4 lightbluegreen

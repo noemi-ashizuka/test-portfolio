@@ -8,6 +8,14 @@ title: Le Wagon Middleman boilerplate
       <%= image_tag "images/noemipic.jpg", alt:"author image", class:"avatar-lg" %>
       <h1>Noemi Ashizuka</h1>
       <h2>Web Developer in Tokyo</h2>
+      <div class="site-icons-inline">
+        <% link_to 'https://github.com/noemi-ashizuka', class:'link-big' do %>
+          <i class="fab fa-github-square"></i>
+        <% end %>
+        <% link_to 'https://www.linkedin.com/in/salvina-noemi-calanducci-7a222294/', class:'link-big' do %>
+          <i class="fab fa-linkedin"></i>
+        <% end %>
+      </div>
     </div>
     <div class="bio-long">
       <p>
@@ -41,6 +49,7 @@ title: Le Wagon Middleman boilerplate
             Clothes you can share clothes with friends, create looks for yourself and your friends to make the most of the clothes you already own. 
             </p>
             <p>As the team manager, I had to assign the tasks to my team mates and keep the workflow to meet the deadline. I also had to pitch the product. I worked on both backend and frontend.</p>
+            <%= link_to 'visit site', 'https://clever-closet-main.herokuapp.com/', class:'btn btn-line' %>
             <div class="spacer"></div>
             <div class="icons-inline">
               <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Ruby">
@@ -84,6 +93,7 @@ title: Le Wagon Middleman boilerplate
             <h3 class="text-clear">Group project | Role: team manager | Time: 1 week</h3>
             <p>Obi is a marketplace where people can rent or lend kimonos of many different types.</p>
             <p>As team manager I organized the tasks for my teammates, designed the database schema and worked on both backend and frontend.</p>
+            <%= link_to 'visit site', 'https://obi-kimono-rental.herokuapp.com/', class:'btn btn-line' %>
           <div class="spacer"></div>
           <div class="icons-inline">
             <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Ruby">
@@ -134,8 +144,8 @@ title: Le Wagon Middleman boilerplate
           <h3 class="text-clear">Personal project | Time: 2 days</h3>
           <p>Project for Le Wagon bootcamp, developed in two days. The purpose was to learn how to develop an app
           with complex databases relations. Also cocktails are fun to make and look amazing. </p>
-          <div class="spacer">
-          </div>
+          <%= link_to 'visit site', 'https://bartender-mister.herokuapp.com/', class:'btn btn-line' %>
+          <div class="spacer"></div>
           <div class="icons-inline">
             <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Ruby">
               <i class="fas fa-gem"></i>
@@ -176,6 +186,7 @@ title: Le Wagon Middleman boilerplate
             <p>Le Wagon weekend challenge. Developed in two days. I decided to go for something I am passionate about and created an app
             where people can upload their own Sailor Scout and choose powers for them.</p>
             <p>The main goal to build this app was to become more familiar with database relations and rails architecture.</p>
+            <%= link_to 'visit site', 'https://sailor-warrior-maker.herokuapp.com/', class:'btn btn-line' %>
             <div class="spacer"></div>
             <div class="icons-inline">
               <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Ruby">
