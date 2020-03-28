@@ -1,10 +1,211 @@
 ---
 title: Le Wagon Middleman boilerplate
 ---
-
-<div class="welcome text-center padded">
-  <h1>You're <a href="https://www.lewagon.com">Le Wagon</a>'s boilerplate!</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<div class="container">
+  <div class="page-container top-circle">
+    <div class="title-center">
+      <!-- profile image -->
+      <%= image_tag "images/noemipic.jpg", alt:"author image", class:"avatar-lg" %>
+      <h1>Noemi Ashizuka</h1>
+      <h2>Web Developer in Tokyo</h2>
+    </div>
+    <div class="bio-long">
+      <p>
+      My name is Noemi and I'm from Italy. I have lived in Tokyo for almost 3 years 
+      now and before Tokyo I was in London for 8 years. I completed Le Wagon 
+      coding bootcamp in March 2020 and I'm currently looking for opportunities. I am working
+      on a few personal projects at the moment, you can check my github. I feel like being a developer
+      is great because there's always something new to learn and I love learning new things.
+      </p>
+      <!-- dropdown -->
+      <div class="skills-container">
+        <%= partial 'dropdown' %>
+      </div>
+    </div>
+    <h1 class="title-stripe">Projects</h1>
+    
+    <!-- project 1 -->
+    <div class="project-content">
+      <div class="row">
+        <div class="col-sm">
+          <div class="project-img">
+            <!-- image carousel -->
+            <%= partial('carousel', locals: { carouselControls: 'carousel_cc', image1: 'cc_home.png', image2: 'cc_profile.png', image3: 'cc_look.png', image4: 'cc_look_show.png', class_set: 'd-block w-100 slide-tall'}) %>
+          </div> <!-- project-img -->
+        </div> <!-- col-sm -->
+        <div class="project-info">
+          <div class="col-sm">
+            <h1>Clever Closet</h1>
+            <h3 class="text-clear">Group project | Role: team manager | Time: 2 weeks</h3>
+            <p>Clever Closet is an app to manage your wardrobe and help reduce the impact of fast fashion on the environment. How does it do that? Simple, with Clever
+            Clothes you can share clothes with friends, create looks for yourself and your friends to make the most of the clothes you already own. 
+            </p>
+            <p>As the team manager, I had to assign the tasks to my team mates and keep the workflow to meet the deadline. I also had to pitch the product. I worked on both backend and frontend.</p>
+            <div class="spacer"></div>
+            <div class="icons-inline">
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Ruby">
+                <i class="fas fa-gem"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Rails">
+                <%= image_tag 'rails_blue.png', width: 24, height: 32%>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="HTML 5">
+                <i class="fab fa-html5"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="CSS">
+                <i class="fab fa-css3-alt"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="SaSS">
+                <i class="fab fa-sass"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="JavaScript">
+                <i class="fab fa-js-square"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Cloudinary AI">
+                <i class="fas fa-cloud-upload-alt"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Trello">
+                <i class="fab fa-trello"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Figma">
+                <i class="fab fa-figma"></i>
+              </a>
+            </div><!-- icons-inline -->
+          </div> <!-- col-sm -->
+        </div> <!-- row -->
+      </div><!-- row ???? -->
+    </div>
+    <!-- project 2 -->
+    <div class="project-content">
+      <div class="row">
+        <div class="col-sm">
+          <div class="project-info">
+            <h1>Obi</h1>
+            <h3 class="text-clear">Group project | Role: team manager | Time: 1 week</h3>
+            <p>Obi is a marketplace where people can rent or lend kimonos of many different types.</p>
+            <p>As team manager I organized the tasks for my teammates, designed the database schema and worked on both backend and frontend.</p>
+          <div class="spacer"></div>
+          <div class="icons-inline">
+            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Ruby">
+              <i class="fas fa-gem"></i>
+            </a>
+            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Rails">
+              <%= image_tag 'rails_blue.png', width: 24, height: 32%>
+            </a>
+            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="HTML 5">
+              <i class="fab fa-html5"></i>
+            </a>
+            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="CSS">
+              <i class="fab fa-css3-alt"></i>
+            </a>
+            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="SaSS">
+              <i class="fab fa-sass"></i>
+            </a>
+            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="JavaScript">
+              <i class="fab fa-js-square"></i>
+            </a>
+            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Cloudinary AI">
+              <i class="fas fa-cloud-upload-alt"></i>
+            </a>
+            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Trello">
+              <i class="fab fa-trello"></i>
+            </a>
+            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Figma">
+              <i class="fab fa-figma"></i>
+            </a>
+          </div><!-- icons-inline -->
+        </div><!-- project-info -->
+      </div><!-- col-sm -->
+      <div class="col-sm">
+        <div class="project-img-lg">
+          <!-- image carousel -->
+          <%= partial('carousel', locals: { carouselControls: 'carousel_obi', image1: 'obi_home.png', image2: 'obi_listings.png', image3: 'obi_show.png', image4: 'obi_dashyuka.png', class_set: 'd-block w-100 slide-short'}) %>
+        </div>
+      </div><!-- col-sm -->
+    </div><!-- row -->
+  </div>
+  
+  <!-- project 3 -->
+  <div class="project-content"> 
+    <div class="row">
+     <div class="col-sm">
+        <div class="project-info">
+          <h1>Bartender Cocktail</h1>
+          <h3 class="text-clear">Personal project | Time: 2 days</h3>
+          <p>Project for Le Wagon bootcamp, developed in two days. The purpose was to learn how to develop an app
+          with complex databases relations. Also cocktails are fun to make and look amazing. </p>
+          <div class="spacer">
+          </div>
+          <div class="icons-inline">
+            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Ruby">
+              <i class="fas fa-gem"></i>
+            </a>
+            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Rails">
+              <%= image_tag 'rails_blue.png', width: 24, height: 32%>
+            </a>
+            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="HTML 5">
+              <i class="fab fa-html5"></i>
+            </a>
+            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="CSS">
+              <i class="fab fa-css3-alt"></i>
+            </a>
+            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="SaSS">
+              <i class="fab fa-sass"></i>
+            </a>
+            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="JavaScript">
+              <i class="fab fa-js-square"></i>
+            </a>
+          </div><!-- icons-inline -->
+        </div><!-- project-info -->
+      </div><!-- col-sm -->
+      <div class="col-sm">
+        <div class="project-img-lg">
+        <!-- image carousel -->
+          <%= partial('carousel', locals: { carouselControls: 'carousel_bc', image1: 'bc_home.png', image2: 'bc_card_one.png', image3: 'bc_card_two.png', image4: 'bc_list.png', class_set: 'd-block w-100 slide-short'}) %>
+        </div>
+      </div><!-- col-sm -->
+    </div><!-- row -->
+  </div>
+    <!-- project 4 -->
+    <div class="project-content">
+      <div class="row">
+        <div class="col-sm">
+          <div class="project-info">
+            <h1>Sailor Warrior Maker</h1>
+            <h3 class="text-clear">Personal project | Time: 2 days</h3>
+            <p>Le Wagon weekend challenge. Developed in two days. I decided to go for something I am passionate about and created an app
+            where people can upload their own Sailor Scout and choose powers for them.</p>
+            <p>The main goal to build this app was to become more familiar with database relations and rails architecture.</p>
+            <div class="spacer"></div>
+            <div class="icons-inline">
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Ruby">
+                <i class="fas fa-gem"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Rails">
+                <%= image_tag 'rails_blue.png', width: 24, height: 32%>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="HTML 5">
+                <i class="fab fa-html5"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="CSS">
+                <i class="fab fa-css3-alt"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="SaSS">
+                <i class="fab fa-sass"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="JavaScript">
+                <i class="fab fa-js-square"></i>
+              </a>
+            </div> <!--icons-inline -->
+          </div><!-- project-info -->
+        </div><!-- col-sm -->
+        <div class="col-sm">
+          <div class="project-img-lg">
+          <!-- image carousel -->
+          <%= partial('carousel', locals: { carouselControls: 'carousel_swm', image1: 'swm_home.png', image2: 'swm_list.png', image3: 'swm_card.png', image4: 'swm_card_two.png', class_set: 'd-block w-100 slide-short'}) %>
+          </div>
+        </div>
+      </div><!-- row -->
+    </div>
+  </div><!-- .welcome -->
+</div>

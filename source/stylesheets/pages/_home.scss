@@ -1,0 +1,152 @@
+html body {
+  font-family: $header-font;
+  color: #383838;
+  background-color: #ededed;
+  h1, h2, h3 {
+    font-family: $base-font;
+  }
+  p {
+    font-size: 16px;
+    padding: 8px;
+  }
+  ul {
+    letter-spacing: 0.5px;
+  }
+}
+
+.page-container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.top-circle {
+  background-color: white;
+  border-top-right-radius: 200px;
+  border-top-left-radius: 200px;
+}
+
+.title-stripe {
+  width: 100%;
+  background-color: #ededed;
+  padding: 24px;
+}
+
+.skills {
+  background-color: #acced4;
+  color: white;
+  margin: 16px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn-line {
+  border: 1px solid #acced4;
+  color: #acced4;
+
+
+  &:hover {
+    opacity: 0.5;
+    color: #acced4;
+  }
+}
+
+.list-styled {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project-content {
+  //margin: 24px;
+  display: flex;
+  background-color: blue($color: #000000);
+  min-height: 100%;
+  margin: 32px;
+  margin-bottom: 24px;
+  padding: 32px;
+}
+
+.project-info {
+  width: 400px;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.icons-inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 16px;
+  i {
+    margin: 4px;
+    font-size: 24px;
+    color: #acced4;
+  }
+}
+
+.tooltip-inner {
+  background-color: #ededed;
+  color: #383838;
+}
+
+.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  border-top-color: #ededed !important;
+}
+
+.bs-tooltip-right .arrow::before, .bs-tooltip-auto[x-placement^="right"] .arrow::before {
+  border-right-color: #ededed !important;
+}
+
+
+.bs-tooltip-bottom .arrow::before, .bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+  border-bottom-color: #ededed !important;
+}
+
+
+.bs-tooltip-left .arrow::before, .bs-tooltip-auto[x-placement^="left"] .arrow::before {
+  border-left-color: #ededed !important;
+}
+
+.project-img {
+  width: 350px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.project-img-lg {
+  width: 480px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.text-clear {
+  color: #848484;
+  opacity: 0.5;
+}
+
+.slide-tall {
+  height: 480px;
+  width: 200px;
+}
+
+.slide-short {
+  height: 400px;
+  width: 530px;
+}
+
+.spacer {
+  height: 40px;
+}
+
+@media only screen and (max-width: 480px) {
+  .project-img-lg {
+    width: 350px;
+  }
+}
