@@ -1,0 +1,117 @@
+<div class="text-center"><p class="text-fine">Click on image to enlarge</p><div>
+<div class="row">
+  <div class="col-sm">
+  <a data-toggle="modal" data-target="#imageModal">
+    <%= image_tag 'illust01.png', width: 200, height: 300, crop: :fit, class:'gallery-thumb'%>
+  </a>
+  <a data-toggle="modal" data-target="#imageModal2">
+    <%= image_tag 'editorial004.png', width: 200, height: 300, crop: :fit, class:'gallery-thumb p-2'%>
+  </a>
+  <a data-toggle="modal" data-target="#imageModal3">
+    <%= image_tag 'editorial001.png', width: 200, height: 300, crop: :scale, class:'gallery-thumb'%>
+  </a>
+  <a data-toggle="modal" data-target="#imageModal4">
+    <%= image_tag 'animals004.png', width: 200, height: 300, crop: :fit, class:'gallery-thumb'%>
+  </a>
+  <a data-toggle="modal" data-target="#imageModal5">
+    <%= image_tag 'editorial006.png', width: 200, height: 300, crop: :fit, class:'gallery-thumb'%>
+  </a>
+  
+  </div>
+</div>
+
+
+<!-- Modal 1 -->
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <%= image_tag 'illust01.png', width: 450, height: 600, crop: :fit %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-line" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <%= image_tag 'editorial004.png', width: 400, height: 600, crop: :fit %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-line" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="imageModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <%= image_tag 'editorial001.png', width: 700, height: 500, crop: :fit %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-line" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="imageModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <%= image_tag 'animals004.png', width: 400, height: 600, crop: :fit %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-line" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5 -->
+<div class="modal fade" id="imageModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <%= image_tag 'editorial006.png', width: 400, height: 600, crop: :fit %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-line" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

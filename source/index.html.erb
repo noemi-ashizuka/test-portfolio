@@ -22,8 +22,11 @@ title: Noemi Ashizuka Developer
       My name is Noemi and I'm from Italy. I have lived in Tokyo for almost 3 years 
       now and before Tokyo I was in London for 8 years. I completed Le Wagon 
       coding bootcamp in March 2020 and I'm currently looking for opportunities. 
+      </p>
+      <p>
       For me being a developer is great because there's always something new to learn and I 
-      love learning new things.I also enjoy creativity, my hobbies are illustration and singing. 
+      love learning new things. I am always looking to work on new projects and put what I learn into practice. 
+      I also enjoy creativity, my hobbies are <%= link_to 'illustration', '#illustration', class:'link-text', style:'text-decoration:none;' %> and singing. 
       </p>
       <!-- dropdown -->
       <div class="skills-container">
@@ -93,90 +96,90 @@ title: Noemi Ashizuka Developer
             <h3 class="text-clear">Group project | Role: team manager | Time: 1 week</h3>
             <p>Obi is a marketplace where people can rent or lend kimonos of many different types.</p>
             <%= link_to 'visit site', 'https://obi-kimono-rental.herokuapp.com/', class:'btn btn-line', target:'_blank' %>
-          <div class="spacer"></div>
-          <div class="icons-inline">
-            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Ruby">
-              <i class="fas fa-gem"></i>
-            </a>
-            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Rails">
-              <%= image_tag 'rails_blue.png', width: 24, height: 32%>
-            </a>
-            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="HTML 5">
-              <i class="fab fa-html5"></i>
-            </a>
-            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="CSS">
-              <i class="fab fa-css3-alt"></i>
-            </a>
-            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="SaSS">
-              <i class="fab fa-sass"></i>
-            </a>
-            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="JavaScript">
-              <i class="fab fa-js-square"></i>
-            </a>
-            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Cloudinary AI">
-              <i class="fas fa-cloud-upload-alt"></i>
-            </a>
-            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Trello">
-              <i class="fab fa-trello"></i>
-            </a>
-            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Figma">
-              <i class="fab fa-figma"></i>
-            </a>
-          </div><!-- icons-inline -->
-          <div class="spacer"></div>
-        </div><!-- project-info -->
-      </div><!-- col-sm -->
-      <div class="col-sm">
-        <div class="project-img-lg">
-          <!-- image carousel -->
-          <%= partial('carousel', locals: { carouselControls: 'carousel_obi', image1: 'obi_home.png', image2: 'obi_listings.png', image3: 'obi_show.png', image4: 'obi_dashyuka.png', class_set: 'd-block w-100 slide-short'}) %>
-        </div>
-      </div><!-- col-sm -->
-    </div><!-- row -->
-  </div>
+            <div class="spacer"></div>
+            <div class="icons-inline">
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Ruby">
+                <i class="fas fa-gem"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Rails">
+                <%= image_tag 'rails_blue.png', width: 24, height: 32%>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="HTML 5">
+                <i class="fab fa-html5"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="CSS">
+                <i class="fab fa-css3-alt"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="SaSS">
+                <i class="fab fa-sass"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="JavaScript">
+                <i class="fab fa-js-square"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Cloudinary AI">
+                <i class="fas fa-cloud-upload-alt"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Trello">
+                <i class="fab fa-trello"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Figma">
+                <i class="fab fa-figma"></i>
+              </a>
+            </div><!-- icons-inline -->
+            <div class="spacer"></div>
+          </div><!-- project-info -->
+        </div><!-- col-sm -->
+        <div class="col-sm">
+          <div class="project-img-lg">
+            <!-- image carousel -->
+            <%= partial('carousel', locals: { carouselControls: 'carousel_obi', image1: 'obi_home.png', image2: 'obi_listings.png', image3: 'obi_show.png', image4: 'obi_dashyuka.png', class_set: 'd-block w-100 slide-short'}) %>
+          </div>
+        </div><!-- col-sm -->
+      </div><!-- row -->
+    </div>
   
-  <!-- project 3 -->
-  <div class="project-content"> 
-    <div class="row">
-     <div class="col-sm">
-        <div class="project-info">
-          <h1>Bartender Cocktail</h1>
-          <h3 class="text-clear">Personal project | Time: 2 days</h3>
-          <p>Project for Le Wagon bootcamp. The purpose was to learn how to develop an app
-          with complex databases relations.</p>
-          <%= link_to 'visit site', 'https://bartender-mister.herokuapp.com/', class:'btn btn-line', target:'_blank' %>
-          <div class="spacer"></div>
-          <div class="icons-inline">
-            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Ruby">
-              <i class="fas fa-gem"></i>
-            </a>
-            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Rails">
-              <%= image_tag 'rails_blue.png', width: 24, height: 32%>
-            </a>
-            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="HTML 5">
-              <i class="fab fa-html5"></i>
-            </a>
-            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="CSS">
-              <i class="fab fa-css3-alt"></i>
-            </a>
-            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="SaSS">
-              <i class="fab fa-sass"></i>
-            </a>
-            <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="JavaScript">
-              <i class="fab fa-js-square"></i>
-            </a>
-          </div><!-- icons-inline -->
-          <div class="spacer"></div>
-        </div><!-- project-info -->
-      </div><!-- col-sm -->
+    <!-- project 3 -->
+    <div class="project-content"> 
+      <div class="row">
       <div class="col-sm">
-        <div class="project-img-lg">
-        <!-- image carousel -->
-          <%= partial('carousel', locals: { carouselControls: 'carousel_bc', image1: 'bc_home.png', image2: 'bc_card_one.png', image3: 'bc_card_two.png', image4: 'bc_list.png', class_set: 'd-block w-100 slide-short'}) %>
-        </div>
-      </div><!-- col-sm -->
-    </div><!-- row -->
-  </div>
+          <div class="project-info">
+            <h1>Bartender Cocktail</h1>
+            <h3 class="text-clear">Personal project | Time: 2 days</h3>
+            <p>Project for Le Wagon bootcamp. The purpose was to learn how to develop an app
+            with complex databases relations.</p>
+            <%= link_to 'visit site', 'https://bartender-mister.herokuapp.com/', class:'btn btn-line', target:'_blank' %>
+            <div class="spacer"></div>
+            <div class="icons-inline">
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Ruby">
+                <i class="fas fa-gem"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="Rails">
+                <%= image_tag 'rails_blue.png', width: 24, height: 32%>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="HTML 5">
+                <i class="fab fa-html5"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="CSS">
+                <i class="fab fa-css3-alt"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="SaSS">
+                <i class="fab fa-sass"></i>
+              </a>
+              <a type="button" class="" data-toggle="tooltip" data-placement="bottom" title="JavaScript">
+                <i class="fab fa-js-square"></i>
+              </a>
+            </div><!-- icons-inline -->
+            <div class="spacer"></div>
+          </div><!-- project-info -->
+        </div><!-- col-sm -->
+        <div class="col-sm">
+          <div class="project-img-lg">
+          <!-- image carousel -->
+            <%= partial('carousel', locals: { carouselControls: 'carousel_bc', image1: 'bc_home.png', image2: 'bc_card_one.png', image3: 'bc_card_two.png', image4: 'bc_list.png', class_set: 'd-block w-100 slide-short'}) %>
+          </div>
+        </div><!-- col-sm -->
+      </div><!-- row -->
+    </div>
     <!-- project 4 -->
     <div class="project-content">
       <div class="row">
@@ -218,6 +221,12 @@ title: Noemi Ashizuka Developer
           </div>
         </div>
       </div><!-- row -->
-    </div>
-  </div><!-- .welcome -->
+    </div><!-- project-content -->
+    <!-- section2 -->
+    <h1 class="title-stripe" id="illustration">Illustration</h1>
+    <div class="project-content">
+      <%= partial('image_gallery') %>
+    <div>
+  </div><!-- .page-container -->
+  <%= link_to 'Page top', '#top', class:'link-text', style:'text-decoration:none;' %>
 </div>

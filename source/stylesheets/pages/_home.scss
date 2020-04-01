@@ -43,6 +43,11 @@ html body {
   }
 }
 
+.link-text {
+  color: #acced4;
+  text-decoration: none;
+}
+
 .title-stripe {
   width: 100%;
   background-color: #ededed;
@@ -161,6 +166,17 @@ html body {
 
 .spacer {
   height: 40px;
+}
+
+.gallery-thumb {
+  margin: 24px;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  
+}
+
+.text-fine {
+  color: #d6d6d6;
 }
 
 @media only screen and (max-width: 480px) {
