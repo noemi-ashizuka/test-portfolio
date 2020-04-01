@@ -86,10 +86,12 @@ html body {
 }
 
 .project-info {
-  width: 400px;
-  flex-grow: 1;
+  width: 100%;
+  flex: 0 0 50%;
   text-align: left;
 }
+
+
 
 .icons-inline {
   display: flex;
@@ -128,13 +130,16 @@ html body {
 
 .project-img {
   width: 350px;
+  // height: 500px;
+  flex: 0 0 50%;
   height: 500px;
   margin: 0 auto;
   padding: 24px;
 }
 
 .project-img-lg {
-  width: 480px;
+  // width: 480px;
+  flex: 0 0 50%;
   margin: 0 auto;
   margin-bottom: 24px;
 }
