@@ -83,7 +83,6 @@ html body {
 .project-content {
   //margin: 24px;
   display: flex;
-  background-color: blue($color: #000000);
   min-height: 100%;
   margin: 32px;
   margin-bottom: 24px;
@@ -172,7 +171,7 @@ html body {
   margin: 24px;
   border: 1px solid #d6d6d6;
   border-radius: 4px;
-  
+  cursor: pointer;
 }
 
 .text-fine {
@@ -181,7 +180,18 @@ html body {
 
 @media only screen and (max-width: 480px) {
   .project-img-lg {
-    width: 350px;
+    width: 300px;
+    padding: 0;
+  }
+
+  .project-img {
+    margin: 0 auto;
+    width: 300px;
+    height: 500px;
+  }
+
+  .project-content {
+    margin: 0 auto;
   }
 }
 
